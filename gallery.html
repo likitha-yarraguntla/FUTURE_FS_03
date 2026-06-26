@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sri Balaji Ghee Sweets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Sri Balaji Ghee Sweets</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+        </div>
+        <button onclick="toggleDarkMode()" class="dark-btn">
+    🌙 Dark Mode
+</button>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h1>Our Sweet Gallery</h1>
+
+       <div class="gallery-grid">
+    <section class="gallery-grid">
+
+  <img src="images/products/Laddu.jpg" alt="Laddu" onclick="openImage(this.src)">
+  <img src="images/products/kaju-katli.jpg" alt="Kaju Katli" onclick="openImage(this.src)">
+  <img src="images/products/gulab-jamun.jpg" alt="Gulab Jamun" onclick="openImage(this.src)">
+  <img src="images/products/jilebi.jpg" alt="Jilebi" onclick="openImage(this.src)">
+  <img src="images/products/kalakani.jpg" alt="Kalakand" onclick="openImage(this.src)">
+  <img src="images/products/mysore-pak.jpg" alt="Mysore Pak" onclick="openImage(this.src)">
+  <img src="images/products/Ravva-laddu.jpg" alt="Ravva Laddu" onclick="openImage(this.src)">
+  <img src="images/products/khaja.jpg" alt="Khaja" onclick="openImage(this.src)">
+
+  <img src="images/products/anjeer-barfi.jpg" alt="Anjeer Barfi" onclick="openImage(this.src)">
+  <img src="images/products/Ariselu.jpg" alt="Ariselu" onclick="openImage(this.src)">
+  <img src="images/products/Bobbatlu.jpg" alt="Bobbatlu" onclick="openImage(this.src)">
+  <img src="images/products/boondi-laddu.jpg" alt="Boondi Laddu" onclick="openImage(this.src)">
+  <img src="images/products/cake-slice.jpg" alt="Cake Slice" onclick="openImage(this.src)">
+  <img src="images/products/cookies.jpg" alt="Cookies" onclick="openImage(this.src)">
+  <img src="images/products/Dilpasand.jpg" alt="Dilpasand" onclick="openImage(this.src)">
+
+  <img src="images/logo/shop.jpg" alt="Shop" onclick="openImage(this.src)">
+
+</section>
+</div>
+    </section>
+    <a href="https://wa.me/918309663069"
+class="whatsapp-float">
+💬
+</a>
+
+    <footer>
+        © 2025 Sri Balaji Ghee Sweets | Made with 💗 in Sattenapalli
+    </footer>
+<div id="popup" class="popup" onclick="closeImage()">
+    <img id="popup-img">
+</div>
+
+<script>
+function openImage(src) {
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("popup-img").src = src;
+}
+
+function closeImage() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
